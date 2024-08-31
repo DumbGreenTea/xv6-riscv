@@ -22,6 +22,9 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
+//Diego was here!
+int getpname(char *buffer, int size);
+
 
 // ulib.c
 int stat(const char*, struct stat*);
@@ -41,3 +44,4 @@ void *memcpy(void *, const void *, uint);
 // umalloc.c
 void* malloc(uint);
 void free(void*);
+

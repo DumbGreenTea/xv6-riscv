@@ -2,7 +2,15 @@
 # include "user/user.h"
 
 int main(){
-    printf("hello world!\n");
+    char *name =(char*)malloc(16*sizeof(char));
+    int r = getpname(name,16);
+
+    if(r == -1){
+        printf("No pude leer el nombre!");
+        exit(1);
+    }
+
+    printf("hello world! from program %d \n", getpid());
 
     exit(0);
 }
